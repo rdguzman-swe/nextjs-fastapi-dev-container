@@ -11,7 +11,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
     && npm install -g pnpm \
     && rm -rf /var/lib/apt/lists/
 
-
 RUN uv python install 3.13
 
 RUN SNIPPET="export PROMPT_COMMAND='history -a'" \
