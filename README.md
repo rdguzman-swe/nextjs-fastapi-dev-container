@@ -17,7 +17,7 @@ code .
 
 3. Reopen in container
    - Press Cmd/Ctrl + Shift + P
-   - Select: `Dev Containers: Reopen in Container`
+   - Select `Dev Containers: Reopen in Container`
 
 4. Scaffold the project
 
