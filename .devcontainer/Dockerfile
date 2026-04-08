@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y \
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
 RUN uv python install 3.13
 
+RUN mkdir -p /commandhistory \
+    && touch /commandhistory/.zsh_history \
+    && chown -R vscode:vscode /commandhistory
+
 USER vscode
 
 RUN curl -fsSL https://bun.sh/install | bash
@@ -14,4 +18,9 @@ RUN curl -fsSL https://bun.sh/install | bash
 ENV BUN_INSTALL="/home/vscode/.bun"
 ENV PATH="$BUN_INSTALL/bin:$PATH"
 
-RUN echo "export PROMPT_COMMAND='history -a'" >> /home/vscode/.bashrc
+RUN echo 'export HISTFILE=/commandhistory/.zsh_history' >> /home/vscode/.zshrc \
+    && echo 'export HISTSIZE=10000' >> /home/vscode/.zshrc \
+    && echo 'export SAVEHIST=10000' >> /home/vscode/.zshrc \
+    && echo 'setopt appendhistory' >> /home/vscode/.zshrc \
+    && echo 'setopt sharehistory' >> /home/vscode/.zshrc \
+    && echo 'setopt hist_ignore_dups' >> /home/vscode/.zshrc
