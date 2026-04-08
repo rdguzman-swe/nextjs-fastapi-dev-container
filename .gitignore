@@ -4,7 +4,7 @@
 !.vscode/settings.json
 !.vscode/extensions.json
 
-# Python (FastAPI / uv)
+# Python (uv)
 __pycache__/
 *.py[codz]
 *.egg-info/
