@@ -25,7 +25,7 @@ if [ -d "frontend" ]; then
   cd frontend
 
   echo "  → Installing dependencies..."
-  pnpm install || true
+  bun install || true
 
   cd ..
 else
