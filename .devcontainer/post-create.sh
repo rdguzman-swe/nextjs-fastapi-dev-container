@@ -32,4 +32,8 @@ else
   echo "⚠️  Skipping backend (not initialized yet)"
 fi
 
+echo "▶ Setting up pre-commit..."
+uv add --dev pre-commit || true
+pre-commit install || true
+
 echo "✅ post-create complete!"
