@@ -3,15 +3,15 @@ SHELL := /bin/bash
 .DEFAULT_GOAL := help
 
 .PHONY: help
-help:
+help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
 	| awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: init
-init: scaffold post-create
+init: scaffold post-create ## Run full project setup (scaffold + post-create)
 
 .PHONY: scaffold
-scaffold:
+scaffold: ## Create backend (FastAPI) and frontend (Next.js) if missing
 	@echo "▶ Scaffolding backend..."
 	@if [ ! -d backend ]; then \
 		mkdir backend && cd backend && \
@@ -33,21 +33,13 @@ scaffold:
 	@echo "✅ Scaffold complete!"
 
 .PHONY: post-create
-post-create:
+post-create: ## Run devcontainer post-create setup script
 	$(SHELL) .devcontainer/post-create.sh
 
 .PHONY: backend
-backend:
+backend: ## Start backend API server (FastAPI with uvicorn)
 	cd backend && uv run uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 .PHONY: frontend
-frontend:
+frontend: ## Start frontend dev server (Next.js via Bun)
 	cd frontend && bun dev
-
-.PHONY: dev
-dev:
-	@echo "Run 'make backend' and 'make frontend' in separate terminals"
-
-.PHONY: shell
-shell:
-	zsh
