@@ -4,12 +4,12 @@ RUN apt-get update && apt-get install -y \
     curl git build-essential ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
-RUN uv python install 3.13
-
 RUN mkdir -p /commandhistory \
     && touch /commandhistory/.zsh_history \
     && chown -R vscode:vscode /commandhistory
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+RUN uv python install 3.13
 
 USER vscode
 
