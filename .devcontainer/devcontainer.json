@@ -17,24 +17,24 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
         "ms-python.python",
         "ms-python.vscode-pylance",
         "charliermarsh.ruff",
         "astral-sh.ty",
-        "bradlc.vscode-tailwindcss",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
         "ms-azuretools.vscode-docker"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         "python.defaultInterpreterPath": "/root/.venv/bin/python",
         "editor.formatOnSave": true,
-        "[python]": {
-          "editor.defaultFormatter": "charliermarsh.ruff"
-        },
         "[typescript]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
         }
       }
     }

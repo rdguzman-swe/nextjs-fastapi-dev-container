@@ -3,6 +3,18 @@ set -e
 
 echo "▶ Running post-create setup..."
 
+if [ -d "frontend" ]; then
+  echo "▶ Setting up frontend..."
+  cd frontend
+
+  echo "  → Installing dependencies..."
+  bun install || true
+
+  cd ..
+else
+  echo "⚠️  Skipping frontend (not initialized yet)"
+fi
+
 if [ -d "backend" ]; then
   echo "▶ Setting up backend..."
   cd backend
@@ -18,18 +30,6 @@ if [ -d "backend" ]; then
   cd ..
 else
   echo "⚠️  Skipping backend (not initialized yet)"
-fi
-
-if [ -d "frontend" ]; then
-  echo "▶ Setting up frontend..."
-  cd frontend
-
-  echo "  → Installing dependencies..."
-  bun install || true
-
-  cd ..
-else
-  echo "⚠️  Skipping frontend (not initialized yet)"
 fi
 
 echo "✅ post-create complete!"
