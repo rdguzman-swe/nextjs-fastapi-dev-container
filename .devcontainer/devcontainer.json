@@ -4,6 +4,11 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    }
+  },
   "forwardPorts": [3000, 8000],
   "portsAttributes": {
     "3000": { "label": "Next.js" },
@@ -33,5 +38,11 @@
       }
     }
   },
-  "postCreateCommand": "bash .devcontainer/post-create.sh"
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "mounts": [
+  "source=/run/host-services/ssh-auth.sock,target=/ssh-agent,type=bind"
+  ],
+  "containerEnv": {
+    "SSH_AUTH_SOCK": "/ssh-agent"
+  }
 }
