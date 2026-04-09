@@ -15,21 +15,22 @@ repos:
       files: \.(js|ts|jsx|tsx|json|css|md)$
 
     # --- Backend ---
-    - id: ruff-check
+    - id: ruff-lint
       name: ruff (lint)
       entry: uv run ruff check
       language: system
-      types_or: [python, pyi, jupyter]
+      types_or: [ python, pyi, jupyter ]
+      # args: [ --fix ]
 
     - id: ruff-format
       name: ruff (format)
       entry: uv run ruff format
       language: system
-      types_or: [python, pyi, jupyter]
+      types_or: [ python, pyi, jupyter ]
 
     - id: ty
       name: ty (type check)
       entry: uv run ty
       language: system
       pass_filenames: false
-      # stages: [pre-push]
+      # stages: [ pre-push ]
