@@ -17,7 +17,7 @@
 [![ty](https://img.shields.io/badge/%E2%80%8B-ty-45ebe0?logo=ty)](https://github.com/astral-sh/ty)
 [![pre-commit](https://img.shields.io/badge/%E2%80%8B-pre--commit-FAB040?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
-A minimal, batteries-included dev container for building full-stack apps with Next.js and FastAPI—no local setup required.
+A minimal, batteries-included dev container for building full-stack apps with `Next.js` and `FastAPI`—no local setup required.
 
 ---
 
@@ -40,10 +40,10 @@ A minimal, batteries-included dev container for building full-stack apps with Ne
 
 Make sure you have the following dependencies installed:
 
-- Docker
-- VS Code with the "Dev Containers" extension
+- `Docker`
+- `VS Code` with the "Dev Containers" extension
 
-> **Note:** This dev container is made specifically for VS Code, but it should work with any IDE that has a "Dev Containers" plugin.
+> **Note:** This dev container is made specifically for `VS Code`, but it should work with any IDE that has a "Dev Containers" plugin.
 
 ### 📦 Setup
 
@@ -53,7 +53,7 @@ Make sure you have the following dependencies installed:
 git clone https://github.com/rdguzman-swe/fastapi-nextjs-dev-container.git <your-project>
 ```
 
-2. Open in VS Code
+2. Open in `VS Code`
 
 ```bash
 code <your-project>
@@ -112,18 +112,18 @@ make help
 
 ## 🪝 Pre-commit Hooks
 This dev container includes `pre-commit` hooks to automatically run checks before each commit:
-- `eslint` (TypeScript linting)
-- `prettier` (TypeScript formatting)
-- `ruff check` (Python linting)
-- `ruff format` (Python formatting)
-- `ty` (Python type checking)
+- `eslint` (`TypeScript` linting)
+- `prettier` (`TypeScript` formatting)
+- `ruff check` (`Python` linting)
+- `ruff format` (`Python` formatting)
+- `ty` (`Python` type checking)
 
 > Hooks are automatically installed when the dev container is created.
 
 ---
 
 ## ⚙️ Dev Container Details
-This dev container is based on Debian 12 and comes with the following tools and VS Code extensions.
+This dev container is based on `Debian` 12 and comes with the following tools and `VS Code` extensions.
 
 ### 🔨 Preinstalled Tools
 
@@ -150,7 +150,7 @@ This dev container is based on Debian 12 and comes with the following tools and 
 ---
 
 ## 🐍 Python Version
-The default Python version for this dev container is Python 3.13. To use a different version, modify the `.python-version` file as follows:
+The default `Python` version for this dev container is `Python 3.13`. To use a different version, modify the `.python-version` file as follows:
 
 ```diff
 3.13 -> <your-version>
