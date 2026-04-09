@@ -29,8 +29,8 @@ A minimal, batteries-included dev container for building full-stack apps with `N
 - 🔍 Static type checking with `TypeScript` and `ty`
 - 🪝 Automatic checks via `pre-commit` hooks
 - 🛠️ Simple developer workflow via `Makefile`
-- 🐳 Docker-in-Docker support
-- 🔁 Persistent shell history across container rebuilds
+- 🐳 `Docker-in-Docker` support
+- 🔁 Persistent `shell` history across container rebuilds
 
 ---
 
@@ -123,7 +123,7 @@ This dev container includes `pre-commit` hooks to automatically run checks befor
 ---
 
 ## ⚙️ Dev Container Details
-This dev container is based on `Debian` 12 and comes with the following tools and `VS Code` extensions.
+This dev container is based on `Debian 12` and comes with the following tools and `VS Code` extensions.
 
 ### 🔨 Preinstalled Tools
 
