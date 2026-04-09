@@ -15,8 +15,8 @@ repos:
       files: \.(js|ts|jsx|tsx|json|css|md)$
 
     # --- Backend ---
-    - id: ruff-lint
-      name: ruff (lint)
+    - id: ruff-check
+      name: ruff (check)
       entry: uv run ruff check
       language: system
       types_or: [ python, pyi, jupyter ]
