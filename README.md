@@ -33,7 +33,7 @@ A minimal, batteries-included dev container for building full-stack apps with Ne
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 🚨 Prerequisites
 
 Make sure you have the following dependencies installed:
 
@@ -42,7 +42,7 @@ Make sure you have the following dependencies installed:
 
 > **Note:** This dev container is made specifically for VS Code, but it should work with any IDE that has a "Dev Containers" plugin.
 
-### Setup
+### 📦 Setup
 
 1.  Clone the repo
 
@@ -121,7 +121,7 @@ This dev container includes `pre-commit` hooks to automatically run checks befor
 
 ## ⚙️ Dev Container Details
 
-### Preinstalled Tools
+### 🔨 Preinstalled Tools
 
 - `Zsh` (Z shell)
 - `Git`
@@ -131,7 +131,7 @@ This dev container includes `pre-commit` hooks to automatically run checks befor
 - `uv`
 - `Python`
 
-### VS Code Extensions
+### 🧩 VS Code Extensions
 
 - `Tailwind CSS`
 - `ESLint`
