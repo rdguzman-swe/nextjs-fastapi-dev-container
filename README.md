@@ -22,10 +22,9 @@ A fully containerized development environment for building modern full-stack web
 
 - ⚡️ Fast tooling via `Bun` and `uv`
 - 🧠 Linting with `ESLint` and `ruff`
-- 💄 Formatting with `Prettier` and `ruff`
+- 🎨 Formatting with `Prettier` and `ruff`
 - 🔍 Static type checking with `TypeScript` and `ty`
 - 🪝 Automatic checks via `pre-commit` hooks
-- 🎨 Frontend styling with `Tailwind CSS`
 - 🛠️ Simple developer workflow via `Makefile`
 - 🐳 Docker-in-Docker support
 - 🔁 Persistent shell history across container rebuilds
@@ -146,6 +145,8 @@ The default Python version for this dev container is Python 3.13. To use a diffe
 ```diff
 3.13 -> <your-version>
 ```
+
+Make sure to rebuild the dev container to see the changes.
 
 ---
 
