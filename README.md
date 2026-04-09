@@ -1,5 +1,8 @@
 # nextjs-fastapi-dev-container
 
+[![Development Containers](https://img.shields.io/badge/%E2%80%8B-Development%20Containers-2753E3?logo=Development%20Containers)](https://github.com/devcontainers)
+[![Docker](https://img.shields.io/badge/%E2%80%8B-Docker-2496ED?logo=Docker)](https://github.com/docker)
+[![Debian](https://img.shields.io/badge/%E2%80%8B-Debian-A81D33?logo=Debian)](https://www.debian.org)
 [![Next.js](https://img.shields.io/badge/%E2%80%8B-Next%2Ejs-000000?logo=Next%2Ejs)](https://github.com/vercel/next.js)
 [![Tailwind CSS](https://img.shields.io/badge/%E2%80%8B-Tailwind%20CSS-06B6D4?logo=Tailwind%20CSS)](https://github.com/tailwindlabs/tailwindcss)
 [![React](https://img.shields.io/badge/%E2%80%8B-React-61DAFB?logo=React)](https://github.com/facebook/react)
@@ -120,10 +123,12 @@ This dev container includes `pre-commit` hooks to automatically run checks befor
 ---
 
 ## ⚙️ Dev Container Details
+This dev container is based on `Debian 12` and comes with the following preinstalled tools and VS Code extensions.
 
 ### 🔨 Preinstalled Tools
 
 - `Zsh` (Z shell)
+- `Oh My Zsh!`
 - `Git`
 - `curl`
 - Build tools
