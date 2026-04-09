@@ -1,5 +1,5 @@
 PYTHON_VERSION := $(shell cat .python-version)
-SHELL := /bin/bash
+BASH := /bin/bash
 .DEFAULT_GOAL := help
 
 .PHONY: help
@@ -25,7 +25,8 @@ scaffold: ## Create frontend (Next.js) and backend (FastAPI) if missing
 		mkdir backend && cd backend && \
 		uv init --no-readme && \
 		uv venv --python $(PYTHON_VERSION) && \
-		uv add fastapi uvicorn; \
+		uv add fastapi uvicorn && \
+		uv add --dev ruff ty; \
 	else \
 		echo "  → backend already exists"; \
 	fi
@@ -34,7 +35,7 @@ scaffold: ## Create frontend (Next.js) and backend (FastAPI) if missing
 
 .PHONY: post-create
 post-create: ## Run devcontainer post-create setup script
-	$(SHELL) .devcontainer/post-create.sh
+	$(BASH) .devcontainer/post-create.sh
 
 .PHONY: frontend
 frontend: ## Start frontend dev server (Next.js via Bun)
