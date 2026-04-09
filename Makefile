@@ -23,7 +23,7 @@ scaffold: ## Create frontend (Next.js) and backend (FastAPI) if missing
 	@echo "▶ Scaffolding backend..."
 	@if [ ! -d backend ]; then \
 		mkdir backend && cd backend && \
-		uv init && \
+		uv init --no-readme && \
 		uv venv --python $(PYTHON_VERSION) && \
 		uv add fastapi uvicorn; \
 	else \
