@@ -25,8 +25,8 @@ scaffold: ## Create frontend (Next.js) and backend (FastAPI) if missing
 		mkdir backend && cd backend && \
 		uv init --no-readme && \
 		uv venv --python $(PYTHON_VERSION) && \
-		uv add fastapi uvicorn && \
-		uv add --dev ruff ty; \
+		uv add fastapi uvicorn --link-mode=copy && \
+		uv add --dev ruff ty pre-commit --link-mode=copy; \
 	else \
 		echo "  → backend already exists"; \
 	fi
