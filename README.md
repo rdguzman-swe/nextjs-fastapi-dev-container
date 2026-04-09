@@ -1,5 +1,19 @@
 # fastapi-nextjs-dev-container
 
+[![Next.js](https://img.shields.io/badge/%E2%80%8B-Next%2Ejs-000000?logo=Next%2Ejs)](https://github.com/vercel/next.js)
+[![Tailwind CSS](https://img.shields.io/badge/%E2%80%8B-Tailwind%20CSS-06B6D4?logo=Tailwind%20CSS)](https://github.com/tailwindlabs/tailwindcss)
+[![React](https://img.shields.io/badge/%E2%80%8B-React-61DAFB?logo=React)](https://github.com/facebook/react)
+[![TypeScript](https://img.shields.io/badge/%E2%80%8B-TypeScript-3178C6?logo=TypeScript)](https://github.com/microsoft/Typescript)
+[![ESLint](https://img.shields.io/badge/%E2%80%8B-ESLint-4B32C3?logo=ESLint)](https://github.com/eslint/eslint)
+[![Prettier](https://img.shields.io/badge/%E2%80%8B-Prettier-F7B93E?logo=Prettier)](https://github.com/prettier/prettier)
+[![Bun](https://img.shields.io/badge/%E2%80%8B-Bun-000000?logo=Bun)](https://github.com/oven-sh/bun)
+[![FastAPI](https://img.shields.io/badge/%E2%80%8B-FastAPI-009688?logo=FastAPI)](https://github.com/fastapi/fastapi)
+[![Python](https://img.shields.io/badge/%E2%80%8B-Python%203.13-3776AB?logo=Python)](https://github.com/python/cpython)
+[![uv](https://img.shields.io/badge/%E2%80%8B-uv-DE5FE9?logo=uv)](https://github.com/astral-sh/uv)
+[![ruff](https://img.shields.io/badge/%E2%80%8B-ruff-D7FF64?logo=ruff)](https://github.com/astral-sh/ruff)
+[![ty](https://img.shields.io/badge/%E2%80%8B-ty-45ebe0?logo=ruff)](https://github.com/astral-sh/ty)
+[![pre-commit](https://img.shields.io/badge/%E2%80%8B-pre--commit-FAB040?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
 A fully containerized development environment for building modern full-stack web applications using Next.js and FastAPI.
 
 ---
@@ -10,10 +24,13 @@ A fully containerized development environment for building modern full-stack web
 - 🧠 Linting with `ESLint` and `ruff`
 - 💄 Formatting with `Prettier` and `ruff`
 - 🔍 Static type checking with `TypeScript` and `ty`
+- 🪝 Automatic checks via `pre-commit` hooks
 - 🎨 Frontend styling with `Tailwind CSS`
 - 🛠️ Simple developer workflow via `Makefile`
 - 🐳 Docker-in-Docker support
 - 🔁 Persistent shell history across container rebuilds
+
+---
 
 ## 🚀 Getting Started
 
@@ -79,29 +96,19 @@ make help
 | ------------------ | ------------------------------------ |
 | `make init`        | Full setup (scaffold + install)      |
 | `make scaffold`    | Create backend & frontend if missing |
-| `make backend`     | Run FastAPI server                   |
-| `make frontend`    | Run Next.js development server       |
+| `make frontend`    | Run Next.js dev server (port 3000)   |
+| `make backend`     | Run FastAPI server (port 8000)       |
 | `make post-create` | Re-run container setup script        |
 
 ---
 
-## ▶️ Running the App
-
-### Start Frontend
-
-```bash
-make frontend
-```
-
-- Runs on port 3000
-
-### Start Backend
-
-```bash
-make backend
-```
-
-- Runs on port 8000
+## 🪝 Pre-Commit Hooks
+This dev container includes `pre-commit` hooks to automatically run checks before each commit:
+1. `eslint`
+2. `prettier`
+3. `ruff-lint`
+4. `ruff-format`
+5. `ty`
 
 ---
 
@@ -126,3 +133,17 @@ make backend
 - Ruff
 - ty
 - Docker
+
+---
+
+## 🐍 Python Version
+The default Python version for this dev container is Python 3.13. To use a different version, modify the `.python-version` file as follows:
+
+```diff
+3.13 -> <your-version>
+```
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
