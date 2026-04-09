@@ -8,9 +8,9 @@
 [![Prettier](https://img.shields.io/badge/%E2%80%8B-Prettier-F7B93E?logo=Prettier)](https://github.com/prettier/prettier)
 [![Bun](https://img.shields.io/badge/%E2%80%8B-Bun-000000?logo=Bun)](https://github.com/oven-sh/bun)
 [![FastAPI](https://img.shields.io/badge/%E2%80%8B-FastAPI-009688?logo=FastAPI)](https://github.com/fastapi/fastapi)
-[![Python](https://img.shields.io/badge/%E2%80%8B-Python%203.13-3776AB?logo=Python)](https://github.com/python/cpython)
+[![Python](https://img.shields.io/badge/%E2%80%8B-Python-3776AB?logo=Python)](https://github.com/python/cpython)
 [![uv](https://img.shields.io/badge/%E2%80%8B-uv-DE5FE9?logo=uv)](https://github.com/astral-sh/uv)
-[![ruff](https://img.shields.io/badge/%E2%80%8B-ruff-D7FF64?logo=ruff)](https://github.com/astral-sh/ruff)
+[![ruff](https://img.shields.io/badge/%E2%80%8B-ruff-D7FF64?logo=ty)](https://github.com/astral-sh/ruff)
 [![ty](https://img.shields.io/badge/%E2%80%8B-ty-45ebe0?logo=ruff)](https://github.com/astral-sh/ty)
 [![pre-commit](https://img.shields.io/badge/%E2%80%8B-pre--commit-FAB040?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
