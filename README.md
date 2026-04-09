@@ -71,7 +71,17 @@ make init
 
 This will scaffold the backend and frontend and install all dependencies.
 
-5. Edit `frontend/` and `backend/` files as needed
+### 📌 Usage
+
+Start/open dev container
+
+- `Cmd/Ctrl + Shift + P`
+- Select `Dev Containers: Reopen in Container`
+
+Stop/close dev container
+
+- `Cmd/Ctrl + Shift + P`
+- Select `Dev Containers: Reopen Folder Locally`
 
 ---
 
@@ -130,7 +140,7 @@ This dev container includes `pre-commit` hooks to automatically run checks befor
 
 This dev container is based on `Debian 12` and comes with the following tools and `VS Code` extensions.
 
-### 🔨 Preinstalled Tools
+### ⚒️ Preinstalled Tools
 
 - `Zsh` (Z shell)
 - `Oh My Zsh!`
@@ -154,6 +164,7 @@ This dev container is based on `Debian 12` and comes with the following tools an
 ---
 
 ## 🐍 Python Version
+
 The default `Python` version for this dev container is `Python 3.13`. To use a different version, modify the `.python-version` file as follows:
 
 ```diff
@@ -165,4 +176,5 @@ Make sure to rebuild the dev container to see the changes.
 ---
 
 ## 📄 License
+
 This project is licensed under the `MIT License`.
