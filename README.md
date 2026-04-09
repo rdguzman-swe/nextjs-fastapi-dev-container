@@ -66,7 +66,7 @@ code <your-project>
 make init
 ```
 
-This will scaffold the backend and frontend and ainstall all dependencies.
+This will scaffold the backend and frontend and install all dependencies.
 
 5. Edit `frontend/` and `backend/` files as needed
 
