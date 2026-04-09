@@ -123,7 +123,7 @@ This dev container includes `pre-commit` hooks to automatically run checks befor
 ---
 
 ## ⚙️ Dev Container Details
-This dev container is based on `Debian 12` and comes with the following preinstalled tools and VS Code extensions.
+This dev container is based on Debian 12 and comes with the following tools and VS Code extensions.
 
 ### 🔨 Preinstalled Tools
 
