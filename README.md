@@ -10,8 +10,8 @@
 [![FastAPI](https://img.shields.io/badge/%E2%80%8B-FastAPI-009688?logo=FastAPI)](https://github.com/fastapi/fastapi)
 [![Python](https://img.shields.io/badge/%E2%80%8B-Python-3776AB?logo=Python)](https://github.com/python/cpython)
 [![uv](https://img.shields.io/badge/%E2%80%8B-uv-DE5FE9?logo=uv)](https://github.com/astral-sh/uv)
-[![ruff](https://img.shields.io/badge/%E2%80%8B-ruff-D7FF64?logo=ty)](https://github.com/astral-sh/ruff)
-[![ty](https://img.shields.io/badge/%E2%80%8B-ty-45ebe0?logo=ruff)](https://github.com/astral-sh/ty)
+[![ruff](https://img.shields.io/badge/%E2%80%8B-ruff-D7FF64?logo=ruff)](https://github.com/astral-sh/ruff)
+[![ty](https://img.shields.io/badge/%E2%80%8B-ty-45ebe0?logo=ty)](https://github.com/astral-sh/ty)
 [![pre-commit](https://img.shields.io/badge/%E2%80%8B-pre--commit-FAB040?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 A fully containerized development environment for building modern full-stack web applications using Next.js and FastAPI.
