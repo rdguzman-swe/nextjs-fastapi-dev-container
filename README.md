@@ -1,6 +1,6 @@
 # nextjs-fastapi-dev-container
 
-[![Dev Container](https://img.shields.io/badge/%E2%80%8B-Development%20Containers-2753E3?logo=Development%20Containers)](https://github.com/devcontainers)
+[![Development Containers](https://img.shields.io/badge/%E2%80%8B-Dev%20Container-2753E3?logo=Development%20Containers)](https://github.com/devcontainers)
 [![Docker](https://img.shields.io/badge/%E2%80%8B-Docker-2496ED?logo=Docker)](https://github.com/docker)
 [![Debian](https://img.shields.io/badge/%E2%80%8B-Debian-A81D33?logo=Debian)](https://www.debian.org)
 [![Next.js](https://img.shields.io/badge/%E2%80%8B-Next%2Ejs-000000?logo=Next%2Ejs)](https://github.com/vercel/next.js)
