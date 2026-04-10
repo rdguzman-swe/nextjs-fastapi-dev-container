@@ -4,13 +4,13 @@ repos:
       # --- Frontend ---
       - id: eslint
         name: eslint
-        entry: bunx --bun eslint
+        entry: bun run lint
         language: system
         files: \.[jt]sx?$
 
       - id: prettier
         name: prettier
-        entry: bunx --bun prettier --write
+        entry: bun run format
         language: system
         files: \.(js|ts|jsx|tsx|json|css|md)$
 
@@ -20,7 +20,7 @@ repos:
         entry: uv run ruff check
         language: system
         types_or: [python, pyi, jupyter]
-        # args: [ --fix ]
+        # args: [--fix]
 
       - id: ruff-format
         name: ruff (format)
@@ -33,4 +33,4 @@ repos:
         entry: uv run ty
         language: system
         pass_filenames: false
-        # stages: [ pre-push ]
+        # stages: [pre-push]
